@@ -1,0 +1,1053 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(90deg, #FFFFFF 12.83%, #888888 85.86%);
+
+    background-size: contain;
+}
+
+
+nav {
+    height: 100px;
+    width: 100%;
+    border: 1px solid var(--bej, #F0E9E3);
+    background: var(--bej, #F0E9E3);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 20px;
+    height: 100%;
+}
+
+nav li {
+    flex-grow: 1;
+    padding: 20px;
+    transition: 0.2s;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid var(--bej, #F0E9E3);
+}
+
+nav li:last-child,
+nav li:first-child {
+    padding: 20px 50px;
+}
+
+nav li:hover {
+    border: 1px solid var(--black, #151515);
+    background: var(--white, #FFF);
+}
+
+.main {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.main__banner {
+    position: relative;
+}
+
+.main__banner .splide__arrow--next {
+    display: none;
+    right: 1em
+}
+
+.main__banner .splide__arrow--prev {
+    display: none;
+    left: 1em
+}
+
+.main__banner .call_reqwest {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-family: "Futura PT";
+    font-weight: 450;
+    font-size: 20px;
+    line-height: 150%;
+    color: white;
+    display: inline-block;
+    background-color: #C03221;
+    padding: 13px 37px;
+    z-index: 3;
+}
+
+.main__banner .splide__slide {
+    display: flex;
+    justify-content: center;
+}
+
+.splide__slide img {
+    display: none;
+    width: 100%;
+}
+
+.splide__slide img:nth-child(1) {
+    display: block;
+}
+
+.advanteges {
+    margin-top: 100px;
+    padding: 0 20px;
+}
+
+.advanteges__wrapper {
+    max-width: calc(115px*5 + 100px*);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.advanteges__element {
+    width: 115px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Futura PT;
+    font-style: normal;
+    font-weight: 300;
+    color: var(--graphite, #2E2E2E);
+    margin: 0 100px 60px 100px;
+}
+
+.advanteges__element img {
+    height: 75px;
+    margin-bottom: 20px;
+}
+
+.name__galery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name__galery .name {
+    color: var(--graphite, #2E2E2E);
+    font-size: 40px;
+    font-family: "Futura PT Cond";
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+}
+
+.price {
+    padding: 0px 50px;
+}
+
+.price_element {
+    border-top: 1px solid #2E2E2E;
+    padding: 100px 0;
+}
+
+.catalog_galery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalog_galery a {
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--graphite, #2E2E2E);
+    background: var(--bej, #F0E9E3);
+    padding: 7px 20px;
+    font-size: 20px;
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: 450;
+    color: var(--black, #151515);
+
+}
+
+.paceholder {
+    margin: 50px 0px;
+    color: var(--graphite, #2E2E2E);
+    /* Futura 20 light */
+    font-size: 20px;
+    font-family: Futura PT;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.price form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: calc(100px + 31px);
+    font-family: Futura PT;
+}
+
+.price form .size {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    border: 1px solid var(--graphite, #2E2E2E);
+    background: var(--white, #FFF);
+    width: 235px;
+    height: 45px;
+    padding: 8px 15px;
+    color: #000;
+    font-size: 20px;
+    font-family: Futura PT;
+    font-style: normal;
+    margin-top: 26px;
+    font-weight: 300;
+}
+
+.price form {
+    color: #000;
+    font-size: 20px;
+    font-family: Futura PT;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.slider_form .splide {
+    width: 600px;
+}
+
+.slider_form .splide .splide__slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider_form {
+    display: flex;
+    justify-content: center;
+}
+
+.slider_form .splide__pagination__page {
+    display: none;
+}
+
+.slider_form .splide__arrow--next {
+    right: -31px;
+    background-image: url(../img/Arrow.png);
+    background-size: 100% 100%;
+    background-color: #ffffff00;
+    border-radius: 0;
+    width: 31px;
+    height: 48px;
+}
+
+.slider_form .splide__arrow--prev {
+    left: -31px;
+    background-image: url(../img/prev.png);
+    background-size: 100% 100%;
+    background-color: #ffffff00;
+    border-radius: 0;
+    width: 31px;
+    height: 48px;
+}
+
+.slider_form .splide__arrow--next svg,
+.slider_form .splide__arrow--prev svg {
+    display: none;
+}
+
+.slider_text p {
+    max-width: 600px;
+    color: var(--graphite, #2E2E2E);
+    /* Futura 20 light */
+    font-size: 20px;
+    font-family: Futura PT;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    margin-top: 30px;
+}
+
+.slider_text .clik_img {
+    width: 100%;
+    display: none;
+}
+
+.img_active .clik_img {
+    display: block;
+}
+
+.img_active .splide {
+    display: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.price form .counter {
+    display: flex;
+    margin-top: 26px;
+}
+
+.price form .counter .count {
+    width: 72px;
+    text-align: center;
+    margin: 0px 12px;
+}
+
+.price form .counter .minus,
+.price form .counter .plus {
+    background-color: #00000000;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+.variables__counter,
+.add_variables,
+.remove_variable {
+    display: flex;
+    align-items: center;
+}
+
+.remove_variable {
+    display: none;
+}
+
+.variables__counter {
+    margin-left: 20px;
+}
+
+.variables__counter .count {
+    color: #000;
+    /* Futura 20 medium */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 450;
+    margin-left: 20px;
+}
+
+.manual {
+    margin: 50px 0;
+}
+
+.manual p {
+    margin-top: 12px;
+    color: var(--graphite, #2E2E2E);
+    text-align: right;
+    /* Futura 20 light */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.price form .pop_price {
+    padding: 13px 37px;
+    background: var(--red, #C03221);
+    color: var(--white, #FFF);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 450;
+}
+
+.price form .your_size {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+/* .price form .our_size {
+    border: 1px solid var(--graphite, #2E2E2E);
+    background: var(--white, #FFF);
+    width: 233px;
+    height: 45px;
+    padding: 1px 16px;
+} */
+
+.custom-select {
+    position: relative;
+    font-family: Futura PT;
+    width: 235px;
+    margin-bottom: 40px;
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element: */
+}
+
+.select-selected {
+    background: var(--white, #FFF);
+    border: 1px solid var(--graphite, #2E2E2E);
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 9px;
+    background-image: url(../img/triengle.png);
+    background-size: 100% 100%;
+
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    background-image: none;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+    color: var(--graphite, #2E2E2E);
+    padding: 12px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background: var(--white, #FFF);
+    top: 100%;
+    right: 0;
+    z-index: 99;
+    width: 233px;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.conditions {
+    margin-bottom: 40px;
+}
+
+.conditions div {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.conditions input {
+    width: 24px;
+    height: 24px;
+    margin-top: 0;
+    margin-left: 23px;
+
+}
+
+.invalid {
+    border-color: red;
+    background-color: #ffeeee;
+}
+
+.conditions label {
+    color: var(--graphite, #2E2E2E);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    margin-left: 23px;
+}
+
+.options input {
+    width: 24px;
+    height: 24px;
+    margin-top: 0;
+}
+
+.options {
+    max-width: 282px;
+    width: 100%;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    /* max-width: 282px; */
+}
+
+.colour .select-selected {
+    margin-top: 26px;
+}
+
+.select_window {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 750px;
+}
+
+.window {
+    position: relative;
+    margin-top: 20px;
+}
+
+.select_window .pelena {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(198, 198, 198, 0.78);
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.select_window .pelena img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.select_window .active .pelena {
+    display: block;
+}
+
+.window_price .slider_text p {
+    max-width: 750px;
+}
+
+.window_price .option {
+    justify-content: left;
+    align-items: center;
+    margin-top: 53px;
+}
+
+.window_price .option input {
+    width: 35px;
+    height: 35px;
+    margin-right: 70px;
+}
+
+.window_price .option p {
+    margin-top: 0;
+}
+
+.window_price #glas_2 {
+    margin-left: 0;
+}
+
+.window_price .conditions {
+    margin: 20px 0;
+}
+
+.pop_up__call {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000029;
+    z-index: 100;
+    display: none;
+}
+
+.pop_up__call .pop_up {
+
+    padding: 50px 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--gradient, linear-gradient(102deg, #FFF 0%, #888 100%));
+    display: flex;
+    justify-content: space-between;
+    max-width: 794px;
+    width: 100%;
+    z-index: 110;
+    flex-wrap: wrap;
+}
+
+.pop_up__call .pop_up .close_btn {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    top: 20px;
+    right: 20px;
+    background-image: url(../img/close_2.svg);
+    background-size: 100% 100%;
+}
+
+.pop_inpt {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.pop_inpt:first-child {
+    margin-bottom: 35px;
+}
+
+.pop_inpt input {
+    margin-top: 0;
+}
+
+.pop_inpt input:last-child {
+    margin-left: 43px;
+}
+
+.pop_up__call .pop_up .pop_price {
+    margin-top: 84px;
+}
+
+.pop_up__call .pop_up .col2 {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.pop_up__call .pop_up .col2 p {
+    margin-top: 30px;
+}
+
+.pop_up__close {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 109;
+}
+
+
+
+.price_element:last-child {
+    border-bottom: 1px solid #2E2E2E;
+}
+
+
+.how_to_order__wrapper {
+    max-width: 1800px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 0 50px;
+    width: fit-content;
+}
+
+.how_to_order__wrapper .yezy_order {
+    color: var(--graphite, #2E2E2E);
+    /* Futura Cond 40 head */
+    font-size: 40px;
+    font-family: Futura PT Cond;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+.how_to_order {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+
+.step {
+    max-width: 154px;
+    color: var(--graphite, #2E2E2E);
+    font-size: 20px;
+    font-family: Futura PT;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.how_to_order .arrow,
+.how_to_order .step {
+    margin-right: 58px;
+}
+
+.step:last-child {
+    margin-right: 0px;
+
+}
+
+.how_to_order__wrapper .call__reqvest {
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.how_to_order__wrapper .call__reqvest button {
+    font-size: 20px;
+    font-family: Futura PT;
+    font-style: normal;
+    font-weight: 450;
+    width: 258px;
+    padding: 13px;
+}
+
+.zamirnuk_btn {
+    background: var(--red, #C03221);
+    margin-top: 50px;
+    color: #ffffff;
+}
+
+.zaavka_btn {
+    margin-top: 37px;
+    border-radius: 5px;
+    border: 2px solid var(--graphite, #2E2E2E);
+    background: var(--bej, #F0E9E3);
+
+    color: var(--graphite, #2E2E2E);
+
+}
+
+.qweshetions p,
+.qweshetions button {
+    display: block;
+    color: var(--graphite, #2E2E2E);
+    font-size: 20px;
+    font-family: Futura PT;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    text-decoration-line: underline;
+    list-style-type: none;
+    padding-left: 20px;
+    background-color: #ffffff00;
+    overflow: hidden;
+}
+
+.qweshetions button {
+    margin-top: 43px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.qweshetions button::before {
+    content: "";
+    /* Додаємо порожній контент */
+    position: absolute;
+    /* Встановлюємо позицію "absolute" для псевдоелемента */
+    left: 0;
+    /* Відступ зліва від батьківського елемента */
+    width: 5px;
+    /* Задайте ширину вашої крапки */
+    height: 5px;
+    /* Задайте висоту вашої крапки */
+    background-color: black;
+    /* Встановлюємо колір вашої крапки */
+    border-radius: 50%;
+    /* Встановлюємо круглу форму для крапки */
+    top: 50%;
+    /* Відступ зверху від батьківського елемента */
+    transform: translateY(-50%);
+}
+
+.panel {
+    display: none;
+    overflow: hidden;
+    text-decoration-line: none;
+    margin-top: 20px;
+}
+
+.panel p {
+
+    text-decoration-line: none;
+
+}
+
+.roll_up {
+    color: var(--graphite, #2E2E2E);
+    font-size: 20px;
+    font-family: Futura PT;
+    font-style: normal;
+    font-weight: 450;
+    padding-left: 20px;
+    margin-top: 50px;
+    position: relative;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.roll_up::after {
+    content: "";
+    /* Додаємо порожній контент */
+    position: absolute;
+    /* Встановлюємо позицію "absolute" для псевдоелемента */
+    right: -60px;
+    /* Відступ зліва від батьківського елемента */
+    width: 31px;
+    /* Задайте ширину вашої крапки */
+    height: 100%;
+    /* Займає всю висоту батьківського елемента */
+    background-image: url('../img/pop_up.svg');
+    /* Встановлюємо шлях до вашого зображення */
+    background-size: cover;
+    /* Адаптуємо розмір зображення */
+    background-position: center;
+    /* Вирівнюємо зображення по центру */
+    border-radius: 50%;
+    /* Встановлюємо круглу форму для крапки */
+    top: 50%;
+    /* Відступ зверху від батьківського елемента */
+    transform: translate(-50%, -50%);
+}
+
+.qweshetions,
+.our_shop {
+    padding: 0 50px;
+    margin-top: 100px;
+}
+
+
+
+.qweshetions h3,
+.our_shop h3 {
+    color: var(--graphite, #2E2E2E);
+    /* Futura Cond 40 head */
+    font-size: 40px;
+    font-family: Futura PT Cond;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    letter-spacing: 4px;
+}
+
+.our_shop {
+    background-image: url(../img/Map1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.our_shop p {
+    color: var(--graphite, #2E2E2E);
+    /* Futura 20 light */
+    font-size: 20px;
+    font-family: Futura PT;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.our_shop li {
+    margin-top: 61px;
+}
+
+footer {
+    margin: 100px 0;
+}
+
+footer .desc_foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.desc_foot .footer_element {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer a,
+footer p {
+    display: block;
+    color: var(--black, #151515);
+    font-size: 20px;
+    font-family: Futura PT;
+    font-style: normal;
+    font-weight: 450;
+}
+
+footer .mob_foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    display: none;
+}
+
+footer .mob_foot .foot_soc_media {
+    margin-top: 20px;
+}
+
+footer .mob_foot .col2 {
+    display: flex;
+
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.footer_element> :nth-child(1n) {
+    margin-bottom: 20px;
+}
+
+.all_variables .variables {
+    margin-top: 40px;
+}
+
+.all_variables .variables:first-child {
+    margin-top: 0px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1250px) {
+    /* header {
+        grid-template-columns: repeat(2, 1fr);
+        height: 50px;
+        z-index: 100;
+    }
+
+    header img {
+        height: 38px;
+    }
+
+    header .logo {
+        justify-content: right;
+    }
+
+    .header__tell,
+    header .soc_media {
+        display: none;
+    } */
+
+    .main__banner .call_reqwest {
+
+        transform: translate(-50%, 120%);
+
+    }
+
+    nav {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        z-index: 99;
+        height: auto;
+        width: 317px;
+    }
+
+    nav ul {
+        display: block;
+
+    }
+
+    .main__banner .splide__slide img:nth-child(1) {
+        display: none;
+    }
+
+    .main__banner .splide__slide img:nth-child(2) {
+        display: block;
+    }
+
+    footer .desc_foot {
+        display: none;
+    }
+
+    footer .mob_foot {
+        display: flex;
+        max-width: 380px;
+        margin: 0 auto;
+        align-items: stretch;
+    }
+
+    .price,
+    .how_to_order__wrapper,
+    .qweshetions,
+    .our_shop,
+    .mob_foot {
+        padding: 20px;
+    }
+
+    header {
+        padding: 6px 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .slider_form .splide {
+        width: 400px;
+    }
+
+    nav li:last-child,
+    nav li:first-child {
+        padding: 20px;
+    }
+
+    .b_menu_list {
+        top: 50px;
+    }
+}
+
+
+@media (max-width: 810px) {
+    .slider_form .splide {
+        width: 200px;
+    }
+
+
+    nav {
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        height: auto;
+        width: 100%;
+    }
+
+    nav ul {
+        display: block;
+
+    }
+
+    .main__banner .splide__slide img:nth-child(2) {
+        display: none;
+    }
+
+    .main__banner .splide__slide img:nth-child(3) {
+        display: block;
+    }
+}
+
+@media (max-width: 605px) {
+    .slider_form {
+        flex-wrap: wrap;
+    }
+
+    .price form {
+        align-items: center;
+        margin-left: 0;
+
+    }
+
+    .price .splide {
+        margin: 0 auto;
+    }
+
+    .main__banner .call_reqwest {
+        transform: translate(-50%, 20%);
+        font-size: 10px;
+
+    }
+
+}
